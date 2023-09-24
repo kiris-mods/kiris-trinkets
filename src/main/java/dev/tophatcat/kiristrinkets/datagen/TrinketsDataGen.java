@@ -1,5 +1,5 @@
 /*
- * Kiri's Modding Template - https://github.com/tophatcats-mods/kiris-modding-template
+ * Kiri's Trinkets - https://github.com/tophatcats-mods/kiris-trinkets
  * Copyright (C) 2013-2023 <KiriCattus>
  *
  * This library is free software; you can redistribute it and/or
@@ -18,12 +18,12 @@
  * USA
  * https://www.gnu.org/licenses/old-licenses/lgpl-2.1.html
  */
-package dev.tophatcat.kirismoddingtemplate.datagen;
+package dev.tophatcat.kiristrinkets.datagen;
 
 import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
 
-public class KirisDataGeneratorTemplate implements DataGeneratorEntrypoint {
+public class TrinketsDataGen implements DataGeneratorEntrypoint {
 
     @Override
     public void onInitializeDataGenerator(FabricDataGenerator fabricDataGenerator) {

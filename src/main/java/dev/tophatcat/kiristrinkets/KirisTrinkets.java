@@ -1,5 +1,5 @@
 /*
- * Kiri's Modding Template - https://github.com/tophatcats-mods/kiris-modding-template
+ * Kiri's Trinkets - https://github.com/tophatcats-mods/kiris-trinkets
  * Copyright (C) 2013-2023 <KiriCattus>
  *
  * This library is free software; you can redistribute it and/or
@@ -18,13 +18,13 @@
  * USA
  * https://www.gnu.org/licenses/old-licenses/lgpl-2.1.html
  */
-package dev.tophatcat.kirismoddingtemplate;
+package dev.tophatcat.kiristrinkets;
 
 
 import org.quiltmc.loader.api.ModContainer;
 import org.quiltmc.qsl.base.api.entrypoint.ModInitializer;
 
-public class KirisModdingTemplate implements ModInitializer {
+public class KirisTrinkets implements ModInitializer {
 
     @Override
     public void onInitialize(ModContainer container) {

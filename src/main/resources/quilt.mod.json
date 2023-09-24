@@ -1,12 +1,12 @@
 {
 	"schema_version": 1,
 	"quilt_loader": {
-		"id": "kirismoddingtemplate",
+		"id": "kiristrinkets",
 		"group": "${group}",
 		"version": "${version}",
 		"metadata": {
-			"name": "Mysterious Biomes",
-			"description": "Kiri's personal template for modding on Quilt.",
+			"name": "Kiri's Trinkets",
+			"description": "Kiri's Trinkets! A bunch of little useful things and cool things Kiri likes! :D",
 			"contributors": {
 				"KiriCattus": "Owner/Author"
 			},
@@ -20,24 +20,24 @@
 				}
 			],
 			"contact": {
-				"homepage": "https://modrinth.com/mod/kiris-modding-template",
-				"issues": "https://github.com/tophatcats-mods/kiris-modding-template/issues",
-				"sources": "https://github.com/tophatcats-mods/kiris-modding-template"
+				"homepage": "https://modrinth.com/mod/kiris-trinkets",
+				"issues": "https://github.com/tophatcats-mods/kiris-trinkets/issues",
+				"sources": "https://github.com/tophatcats-mods/kiris-trinkets"
 			},
 			"license": {
 				"name": "Lesser General Public License v2.1",
 				"id": "LGPL-2.1",
-				"url": "https://github.com/tophatcats-mods/kiris-modding-template/blob/dev/LICENSE.md"
+				"url": "https://github.com/tophatcats-mods/kiris-trinkets/blob/dev/LICENSE.md"
 			},
-			"icon": "assets/kirismoddingtemplate/logo.png"
+			"icon": "assets/kiristrinkets/logo.png"
 		},
 		"intermediate_mappings": "net.fabricmc:intermediary",
 		"entrypoints": {
 			"init": [
-				"dev.tophatcat.kirismoddingtemplate.KirisModdingTemplate"
+				"dev.tophatcat.kiristrinkets.KirisTrinkets"
 			],
 			"fabric-datagen": [
-				"dev.tophatcat.kirismoddingtemplate.datagen.KirisDataGeneratorTemplate"
+				"dev.tophatcat.kiristrinkets.datagen.TrinketsDataGen"
 			]
 		},
 		"depends": [
@@ -56,6 +56,10 @@
 			{
 				"id": "midnightlib",
 				"version": ">=1.4.1"
+			},
+			{
+				"id": "kirislib",
+				"version": ">=5.0.0"
 			}
 		]
 	},
@@ -69,8 +73,8 @@
 	"modmenu": {
 		"links": {
 			"modmenu.discord": "https://discord.tophatcat.dev",
-			"modmenu.modrinth": "https://modrinth.com/mod/kiris-modding-template",
-			"modmenu.curseforge": "https://www.curseforge.com/minecraft/mc-mods/kiris-modding-template"
+			"modmenu.modrinth": "https://modrinth.com/mod/kiris-trinkets",
+			"modmenu.curseforge": "https://www.curseforge.com/minecraft/mc-mods/kiris-trinkets"
 		},
 		"update_checker": false
 	}

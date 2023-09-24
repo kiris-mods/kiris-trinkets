@@ -73,6 +73,7 @@ dependencies {
 	modImplementation libs.quilted.fabric.api
 
 	modImplementation libs.midnight.lib
+	modImplementation libs.kiris.lib
 	modApi libs.modmenu
 }
 
