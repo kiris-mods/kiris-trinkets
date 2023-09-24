@@ -1,0 +1,77 @@
+{
+	"schema_version": 1,
+	"quilt_loader": {
+		"id": "kirismoddingtemplate",
+		"group": "${group}",
+		"version": "${version}",
+		"metadata": {
+			"name": "Mysterious Biomes",
+			"description": "Kiri's personal template for modding on Quilt.",
+			"contributors": {
+				"KiriCattus": "Owner/Author"
+			},
+			"authors": [
+				{
+					"name": "KiriCattus",
+					"contact": {
+						"github": "KiriCattus",
+						"homepage": "https://tophatcat.dev"
+					}
+				}
+			],
+			"contact": {
+				"homepage": "https://modrinth.com/mod/kiris-modding-template",
+				"issues": "https://github.com/tophatcats-mods/kiris-modding-template/issues",
+				"sources": "https://github.com/tophatcats-mods/kiris-modding-template"
+			},
+			"license": {
+				"name": "Lesser General Public License v2.1",
+				"id": "LGPL-2.1",
+				"url": "https://github.com/tophatcats-mods/kiris-modding-template/blob/dev/LICENSE.md"
+			},
+			"icon": "assets/kirismoddingtemplate/logo.png"
+		},
+		"intermediate_mappings": "net.fabricmc:intermediary",
+		"entrypoints": {
+			"init": [
+				"dev.tophatcat.kirismoddingtemplate.KirisModdingTemplate"
+			],
+			"fabric-datagen": [
+				"dev.tophatcat.kirismoddingtemplate.datagen.KirisDataGeneratorTemplate"
+			]
+		},
+		"depends": [
+			{
+				"id": "quilt_loader",
+				"versions": ">=0.20.2"
+			},
+			{
+				"id": "quilted_fabric_api",
+				"versions": ">=7.2.1"
+			},
+			{
+				"id": "minecraft",
+				"versions": "=1.20.1"
+			},
+			{
+				"id": "midnightlib",
+				"version": ">=1.4.1"
+			}
+		]
+	},
+	"mc-publish": {
+		"loaders": [
+			"quilt"
+		],
+		"curseforge": 100000,
+		"modrinth": "SSSSSSSS"
+	},
+	"modmenu": {
+		"links": {
+			"modmenu.discord": "https://discord.tophatcat.dev",
+			"modmenu.modrinth": "https://modrinth.com/mod/kiris-modding-template",
+			"modmenu.curseforge": "https://www.curseforge.com/minecraft/mc-mods/kiris-modding-template"
+		},
+		"update_checker": false
+	}
+}

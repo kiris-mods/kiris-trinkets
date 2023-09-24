@@ -1,0 +1,1 @@
+add your mods logo in this directory, needs to be called logo.png and be 400x400px.
