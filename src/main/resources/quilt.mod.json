@@ -33,12 +33,9 @@
 		},
 		"intermediate_mappings": "net.fabricmc:intermediary",
 		"entrypoints": {
-			"init": [
-				"dev.tophatcat.kiristrinkets.KirisTrinkets"
-			],
-			"fabric-datagen": [
-				"dev.tophatcat.kiristrinkets.datagen.TrinketsDataGen"
-			]
+			"init": "dev.tophatcat.kiristrinkets.KirisTrinkets",
+			"client_init": "dev.tophatcat.kiristrinkets.client.TrinketsRendering",
+			"fabric-datagen": "dev.tophatcat.kiristrinkets.datagen.TrinketsDataGen"
 		},
 		"depends": [
 			{

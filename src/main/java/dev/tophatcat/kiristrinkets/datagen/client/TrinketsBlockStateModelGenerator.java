@@ -18,32 +18,25 @@
  * USA
  * https://www.gnu.org/licenses/old-licenses/lgpl-2.1.html
  */
-package dev.tophatcat.kiristrinkets;
+package dev.tophatcat.kiristrinkets.datagen.client;
 
+import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
+import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
+import net.minecraft.data.models.BlockModelGenerators;
+import net.minecraft.data.models.ItemModelGenerators;
 
-import dev.tophatcat.kiristrinkets.init.TrinketsRegistry;
-import net.minecraft.resources.ResourceLocation;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.level.block.Block;
-import org.quiltmc.loader.api.ModContainer;
-import org.quiltmc.qsl.base.api.entrypoint.ModInitializer;
+public class TrinketsBlockStateModelGenerator extends FabricModelProvider {
 
-import java.util.LinkedHashMap;
-import java.util.Map;
-import java.util.function.Supplier;
-
-public class KirisTrinkets implements ModInitializer {
-
-    public static final String MOD_ID = "kiristrinkets";
-    public static final Map<ResourceLocation, Supplier<Block>> BLOCKS = new LinkedHashMap<>();
-    public static final Map<ResourceLocation, Supplier<Item>> ITEMS = new LinkedHashMap<>();
-
-    @Override
-    public void onInitialize(ModContainer container) {
-        TrinketsRegistry.init();
+    public TrinketsBlockStateModelGenerator(FabricDataOutput output) {
+        super(output);
     }
 
-    public static ResourceLocation identifier(String name) {
-        return new ResourceLocation(MOD_ID, name);
+    @Override
+    public void generateBlockStateModels(BlockModelGenerators modelGen) {
+    }
+
+    @Override
+    public void generateItemModels(ItemModelGenerators itemModelGenerator) {
+
     }
 }

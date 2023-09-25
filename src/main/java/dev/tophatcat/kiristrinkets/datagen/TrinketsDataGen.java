@@ -20,6 +20,8 @@
  */
 package dev.tophatcat.kiristrinkets.datagen;
 
+import dev.tophatcat.kiristrinkets.datagen.client.TrinketsBlockStateModelGenerator;
+import dev.tophatcat.kiristrinkets.datagen.client.TrinketsLanguageGenerator;
 import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
 
@@ -27,7 +29,9 @@ public class TrinketsDataGen implements DataGeneratorEntrypoint {
 
     @Override
     public void onInitializeDataGenerator(FabricDataGenerator fabricDataGenerator) {
-        //fabricDataGenerator.addProvider(KirisLootProvider::new);
-        //fabricDataGenerator.addProvider(KirisModelProvider::new);
+        FabricDataGenerator.Pack pack = fabricDataGenerator.createPack();
+        pack.addProvider(TrinketsBlockStateModelGenerator::new);
+        pack.addProvider(TrinketsLanguageGenerator::new);
+        //TODO Recipe and loot generators.
     }
 }
