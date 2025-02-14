@@ -1,22 +1,32 @@
 pluginManagement {
     repositories {
-		maven {
-			name = 'Quilt'
-			url = 'https://maven.quiltmc.org/repository/release'
-		}
-
-        maven {
-            name = 'Sponge Snapshots'
-            url = 'https://repo.spongepowered.org/repository/maven-public/'
-        }
-
-		// Currently needed for Intermediary and other temporary dependencies
-		maven {
-			name = 'Fabric'
-			url = 'https://maven.fabricmc.net/'
-		}
-
-        mavenCentral()
         gradlePluginPortal()
+        mavenCentral()
+        maven {
+            name = "NeoForge"
+            url = "https://maven.neoforged.net"
+        }
+        exclusiveContent {
+            forRepository {
+                maven {
+                    name = "Fabric"
+                    url = "https://maven.fabricmc.net"
+                }
+            }
+            filter {
+                includeGroup("net.fabricmc")
+                includeGroup("fabric-loom")
+            }
+        }
     }
 }
+
+plugins {
+    id 'org.gradle.toolchains.foojay-resolver-convention' version '0.9.0'
+}
+
+// This should match the folder name of the project, or else IDEA may complain (see https://youtrack.jetbrains.com/issue/IDEA-317606)
+rootProject.name = "kiris-mod-template"
+include("common")
+include("fabric")
+include("neoforge")

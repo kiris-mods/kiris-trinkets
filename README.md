@@ -1,16 +1,26 @@
-<h1 align="center">Kiri's Trinkets</h1>  
-<h5 align="center">Kiri's Trinkets! A bunch of little useful things and cool things Kiri likes! :D</h5>
+<h1>Cattus Utilities</h1>
+<h5>A utility mod of miscellaneous content Cattus and Curle thought would be a good idea for Minecraft!</h5>
 
-<p align="center">
 <a href="https://discord.tophatcat.dev">
-    <img src="https://img.shields.io/badge/Discord-CattusMods-brightgreen.svg?style=flat&logo=Discord"/>
+    <img src="https://img.shields.io/badge/Discord-CattusMods-brightgreen.svg?style=flat&logo=Discord" alt="Discord server invite."/>
+</a>
+
+<a href="https://modrinth.com/mod/cattus-utilities">
+    <img src="https://img.shields.io/modrinth/dt/AAAAAAAA?style=flat&label=Modrinth&logo=modrinth" alt="Modrinth Badge.">
+</a>
+
+<a href="https://www.curseforge.com/minecraft/mc-mods/cattus-utilities">
+    <img src="https://img.shields.io/curseforge/dt/000000?style=flat&label=CurseForge&logo=curseforge" alt="CurseForge Badge.">
+</a>
+
+<a href="https://github.com/kiris-mods/cattus-utilities/actions/workflows/build_status.yml">
+    <img src="https://img.shields.io/github/actions/workflow/status/kiris-mods/cattus-utilities/build_status.yml?branch=dev&style=flat&label=Build Status&logo=github" alt="Github Build Status.">
 </a>
 
 <a href="https://tophatcat.dev/">
-    <img src="https://img.shields.io/badge/Website-tophatcat.dev-brightgreen.svg?style=flat"/>
+    <img src="https://img.shields.io/badge/Website-tophatcat.dev-brightgreen.svg?style=flat" alt="Website link."/>
 </a>
 
-<a href="https://github.com/tophatcats-mods/kiris-trinkets/commits/dev">
-    <img src="https://img.shields.io/github/last-commit/tophatcats-mods/kiris-trinkets.svg">
+<a href="https://github.com/kiris-mods/cattus-utilities/commits/dev">
+    <img src="https://img.shields.io/github/last-commit/kiris-mods/cattus-utilities.svg" alt="Latest commit.">
 </a>
-</p>
