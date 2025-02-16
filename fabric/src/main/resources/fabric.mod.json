@@ -17,10 +17,10 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-      "dev.tophatcat.cattusutilities.CattusUtilitiesFabric"
+      "dev.tophatcat.cattustrinkets.CattusTrinketsFabric"
     ],
     "client": [
-      "dev.tophatcat.cattusutilities.client.CattusRenderingFabric"
+      "dev.tophatcat.cattustrinkets.client.CattusRenderingFabric"
     ]
   },
   "depends": {
